@@ -25,3 +25,13 @@ string[] InputArrayOfString ()
 }
 
 string[] sourceArrayOfString = InputArrayOfString();
+int sizeOfShortWordArray = 0;
+int countShortWord = 0;
+
+foreach (var i in sourceArrayOfString)
+{
+    if (i.Length <= 3) 
+        sizeOfShortWordArray++;
+}
+
+string[] arrayOfStringShortWord = new string[sizeOfShortWordArray];
