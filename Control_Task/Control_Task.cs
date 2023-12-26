@@ -35,3 +35,12 @@ foreach (var i in sourceArrayOfString)
 }
 
 string[] arrayOfStringShortWord = new string[sizeOfShortWordArray];
+
+foreach (var i in sourceArrayOfString)
+{
+    if (i.Length <= 3)
+    {
+        arrayOfStringShortWord[countShortWord] = i;
+        countShortWord++;
+    }
+}
