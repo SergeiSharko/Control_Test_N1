@@ -44,3 +44,8 @@ foreach (var i in sourceArrayOfString)
         countShortWord++;
     }
 }
+
+Console.WriteLine();
+Console.Write("[" + string.Join(" , ", sourceArrayOfString) + "]");
+Console.Write(" --> ");
+Console.Write("[" + string.Join(" , ", arrayOfStringShortWord) + "]");
